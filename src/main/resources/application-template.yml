@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    username: ""
+    password: ""
+    url: "jdbc:mysql://localhost:3306/snowflake"
+snowflake:
+  server-id: ""
+  discord-enabled: true
+  whitelist-enabled: true
+discord:
+  enabled: true
+  properties:
+    clientId: "1145445747291078767"
+    clientSecret: ""
+    baseUri: "https://discord.com/api/v10/"
+    redirectUri: "http://localhost:8080/authorize/"
+server:
+  port: 8080
+logging:
+  level:
+    root: info
